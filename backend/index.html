@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        font-size: 100px;
+        padding: 20px;
+        border-radius: 50px;
+        border-bottom: 25px solid gray;
+      }
+      button:active {
+        border-bottom: 0;
+        transform: translateY(10px);
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100dvh;
+      gap: 20px;
+    "
+  >
+    <button onclick="fetch('/led/on')">ON</button>
+    <button onclick="fetch('/led/off')">OFF</button>
+  </body>
+</html>
